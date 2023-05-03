@@ -1,4 +1,4 @@
-package rend1x.ewallet.ui.theme
+package rend1x.ewallet.core.ui
 
 import androidx.compose.ui.graphics.Color
 

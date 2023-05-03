@@ -1,0 +1,27 @@
+apply from: "$rootDir/common-build.gradle"
+
+android {
+
+    namespace 'rend1x.ewallet.core.ui'
+
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+    }
+
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    implementation(
+            deps.compose.material,
+            deps.compose.ui_tooling_preview,
+            // todo пока так пока не придумаю свою тему
+            'androidx.compose.material3:material3:1.1.0-rc01'
+    )
+
+    debugImplementation(
+            deps.compose.ui_tooling
+    )
+}
