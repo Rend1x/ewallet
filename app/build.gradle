@@ -47,8 +47,6 @@ android {
 
 dependencies {
     implementation(
-           // project('core:ui'),
-
             deps.androidx.appcompat,
             deps.androidx.core_ktx,
 
