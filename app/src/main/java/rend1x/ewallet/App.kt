@@ -10,7 +10,9 @@ class App : Application() {
     }
 
     private fun initDagger() {
-        TODO("Not yet implemented")
+//        DI.init(
+//
+//        )
     }
 
     private fun initTimber() {

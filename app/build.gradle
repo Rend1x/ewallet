@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -47,19 +48,13 @@ android {
 
 dependencies {
     implementation(
-            deps.androidx.appcompat,
-            deps.androidx.core_ktx,
+            project (':core:ui'),
+            project (':core:di'),
 
-            deps.compose.activity_compose,
-            deps.compose.ui,
-            deps.compose.ui_tooling,
-            deps.compose.ui_tooling_preview
+            deps.dagger.dagger
     )
 
-    debugImplementation(
-            deps.compose.ui_tooling,
-            deps.compose.ui_test_manifest,
-    )
+    coreLibraryDesugaring deps.androidtools.desugar_jdk_libs
 
-    //implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    kapt(deps.dagger.compiler)
 }

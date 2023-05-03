@@ -15,4 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "ewallet"
 include ':app',
-        ':core:ui'
+        ':core:ui',
+        ':core:di',
+        ':core:main'
