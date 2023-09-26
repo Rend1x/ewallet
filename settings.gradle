@@ -17,4 +17,5 @@ rootProject.name = "ewallet"
 include ':app',
         ':core:ui',
         ':core:di',
-        ':core:main'
+        ':core:main',
+        ':core:navigation'

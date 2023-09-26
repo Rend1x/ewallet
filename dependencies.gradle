@@ -8,6 +8,7 @@ versions.activity_compose = '1.7.1'
 versions.dagger = '2.43.1'
 versions.desugar_jdk_libs = '1.1.5'
 versions.modo = '0.7.1'
+versions.decompose = '2.0.0-alpha-02'
 
 
 /* Dependencies */
@@ -47,6 +48,7 @@ def androidtools = [:]
 androidtools.desugar_jdk_libs = "com.android.tools:desugar_jdk_libs:$versions.desugar_jdk_libs"
 deps.androidtools = androidtools
 
-deg navigation = [:]
-navigation.modo = "io.fajarca.navigation:modo:$versions.modo"
+def navigation = [:]
+navigation.modo = "com.github.terrakok:modo-compose:$versions.modo"
+navigation.decompose = "com.arkivanov.decompose:decompose:$versions.decompose"
 deps.navigation = navigation

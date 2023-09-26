@@ -5,6 +5,6 @@ import rend1x.ewallet.core.di.holder.BaseHolder
 
 interface GlobalHolderInitializer {
 
-    public fun init(featureContainerManager: FeatureContainerManager): Map<Class<*>, BaseHolder<*>>
+    fun init(featureContainerManager: FeatureContainerManager): Map<Class<*>, BaseHolder<*>>
 
 }
